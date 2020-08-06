@@ -14,7 +14,8 @@ X = [
     [151,69,44],
 ]
 
-# Target prediction
+# Target prediction:
+# This is our guide for the predictor to make its inference
 y = ['male','female','female','male','male',
 'female','male','female','male','male']
 
