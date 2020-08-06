@@ -15,7 +15,7 @@ X = [
 ]
 
 # Target prediction
-y = ['male','female','female','male','male', 
+y = ['male','female','female','male','male',
 'female','male','female','male','male']
 
 classifier = tree.DecisionTreeClassifier()
@@ -23,9 +23,12 @@ classifier = tree.DecisionTreeClassifier()
 # Capture patterns in the training data (X, y)
 classifier = classifier.fit(X, y)
 
-# Data to predict its gender
-newData = [181,90,41]
+# Data to predict its gender(s)
+newData = [
+    [181,90,41],
+    [177,85,44]
+]
 
-prediction = classifier.predict([newData])
+prediction = classifier.predict(newData)
 
 print(prediction)
